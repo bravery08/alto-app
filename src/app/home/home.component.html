@@ -2,14 +2,14 @@
 
     <mat-step label="Your Trip" state="phone">
       <app-trip [tripDetails]="tripDetails"></app-trip>
-      <div>
+      <div class="stepper-button">
         <button mat-button matStepperNext>Next</button>
       </div>
     </mat-step>
 
     <mat-step label="Your Driver" state="chat">
       <app-driver [tripDetails]="tripDetails"></app-driver>
-      <div>
+      <div class="stepper-button">
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
@@ -17,7 +17,7 @@
 
     <mat-step label="Your Vehicle" state="phone">
       <app-vehicle [tripDetails]="tripDetails"></app-vehicle>
-      <div>
+      <div class="stepper-button">
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
@@ -25,7 +25,7 @@
 
     <mat-step label="Your Route">
       <app-route [tripDetails]="tripDetails"></app-route>
-      <div>
+      <div class="stepper-button">
         <button mat-button matStepperPrevious>Back</button>
       </div>
     </mat-step>
