@@ -1,0 +1,41 @@
+<mat-stepper>
+
+    <mat-step label="Your Trip" state="phone">
+      <app-trip [tripDetails]="tripDetails"></app-trip>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+
+    <mat-step label="Your Driver" state="chat">
+      <app-driver [tripDetails]="tripDetails"></app-driver>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+
+    <mat-step label="Your Vehicle" state="phone">
+      <app-vehicle [tripDetails]="tripDetails"></app-vehicle>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+
+    <mat-step label="Your Route">
+      <app-route [tripDetails]="tripDetails"></app-route>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+      </div>
+    </mat-step>
+  
+    <!-- Icon overrides. -->
+    <ng-template matStepperIcon="phone">
+      <mat-icon>call_end</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="chat">
+      <mat-icon>forum</mat-icon>
+    </ng-template>
+  </mat-stepper>
+  

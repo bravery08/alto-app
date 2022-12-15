@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { tripDetails } from './services/mission';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alto-app';
+  tripDetails = tripDetails;
 }
