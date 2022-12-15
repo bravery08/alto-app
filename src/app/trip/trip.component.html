@@ -1,0 +1,63 @@
+<mat-card>
+    <mat-card-content>
+
+        <img class="alto-logo" src="./assets/images/alto_logo.png">
+
+        <h1>Your Trip</h1>
+
+        <div class="eta-container">
+            <div class="eta">{{ tripDetails?.trip?.estimated_arrival | date: 'h:mm a' }}</div>
+            <div class="dropoff-location">Estimated arrival at {{ tripDetails?.trip?.dropoff_location?.name }}</div>
+        </div>
+
+        <div class="cost-riders-container">
+            <div class="cost">
+                <hr>
+                <p class="cost">Estimated Fare:</p>
+                <span class="cost">{{ tripDetails?.trip?.estimated_fare_min | division: 100 | currency:'USD':'symbol':'0.0' }} - {{ tripDetails?.trip?.estimated_fare_max | division: 100 | currency:'USD':'symbol':'0.0' }}</span>
+            </div>
+            <div class="passengers">
+                <hr>
+                <p>Passengers:</p>
+                <span>{{ tripDetails?.trip?.passengers_min }} - {{ tripDetails?.trip?.passengers_max }}</span>
+            </div>
+            <div class="payment">
+                <hr>
+                <p>Payment:</p>
+                <span>{{ tripDetails?.trip?.payment }}</span>
+            </div>
+        </div>
+
+        <div class="pickup-location">
+            <p>{{ tripDetails?.trip?.pickup_location?.street_line1 }}</p>
+            <p>{{ tripDetails?.trip?.pickup_location?.city }}, {{ tripDetails?.trip?.pickup_location?.state }} {{ tripDetails?.trip?.pickup_location?.zipcode }}</p>
+        </div>
+
+        <hr>
+
+        <div class="dropoff-address">
+            <p>{{ tripDetails?.trip?.dropoff_location?.name }}</p>
+            <p>Irving, {{ tripDetails?.trip?.dropoff_location?.state }} {{ tripDetails?.trip?.dropoff_location?.zipcode }}</p>
+        </div>
+
+        <div class="notes">
+            <p>{{ tripDetails?.trip?.notes }}</p>
+        </div>
+
+        <div>
+            <button>CANCEL TRIP</button>
+            <hr class="horizontal-row">
+        </div>
+
+        <div class="footer-container">
+            <img class="person-icon" src="./assets/images/person_icon.png">
+            <div class="footer-text">
+                <p class="footer-location">{{ tripDetails?.trip?.dropoff_location?.city }}</p>
+                <p>ETA: {{ tripDetails?.trip?.estimated_arrival | date: 'h:mm a' }}</p>
+            </div>
+            <img class="target-icon" src="./assets/images/target_icon.png">
+        </div>
+    </mat-card-content>
+</mat-card>
+
+
