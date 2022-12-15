@@ -1,24 +1,34 @@
 <mat-card>
     <mat-card-content>
 
-        <img class="alto-logo" src="./assets/images/alto_logo.png">
+        <div class="alto-logo">
+            <img src="./assets/images/alto_logo.png">
+        </div>
 
-        <img class="vehicle-image" src="./assets/images/Vehicle_photo.png">
-    
+        <div class="vehicle-image">
+            <img src="./assets/images/Vehicle_photo.png">
+        </div>
         <p class="title">YOUR VEHICLE</p>
 
         <h1 class="vehicle-name">Alto 09</h1>
 
         <hr>
 
-        <p>
-            Steph Festiculma is a graduate of Parsons New School
-            in New York and fluent in Portugeuse, Spanish and
-            English. Steph has been driving with Alto since 2018.
-        </p>
+        <div class="vehicle-details-container">
+            <div class="make-model">
+                <hr>
+                <p class="cost">Make / Model</p>
+                <span class="cost">{{ tripDetails?.vehicle?.make }}</span>
+            </div>
+            <div class="color">
+                <hr>
+                <p>Color</p>
+                <span>{{ tripDetails?.vehicle?.color }}</span>
+            </div>
+        </div>
 
         <div>
-            <button>CONTACT DRIVER</button>
+            <button>IDENTIFY VEHICLE</button>
             <hr class="horizontal-row">
         </div>
 
