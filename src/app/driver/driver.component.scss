@@ -13,6 +13,7 @@ mat-card {
 mat-card-content {
     display: flex;
     flex-direction: column;
+    margin: 0px 10px;
 }
 
 img {
@@ -24,6 +25,27 @@ img {
 
 .driver-image {
     width: 50%;
+}
+
+.title {
+    color: rgb(172 130 109);
+    font-size: .75em;
+    margin-top: 2em;
+}
+
+.driver-name {
+    color: rgb(51, 52, 51);
+    font-size: 4em;
+    margin-top: .5em;
+}
+
+.hr {
+    margin-top: 2em;
+}
+
+.driver-bio {
+    margin-top: 5px;
+    color: rgb(103, 102, 102);
 }
 
 button {
