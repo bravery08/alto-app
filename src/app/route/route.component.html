@@ -1,10 +1,14 @@
 <mat-card>
     <mat-card-content>
 
-        <img class="alto-logo" src="./assets/images/alto_logo.png">
+        <div class="alto-logo">
+            <img src="./assets/images/alto_logo.png">
+        </div>
 
-        <img class="route-image" src="./assets/images/Map_overview.png">
-    
+        <div class="route-image">
+            <img src="./assets/images/Map_overview.png">
+        </div>
+
         <p class="title">YOUR TRIP</p>
 
         <div class="eta-container">
@@ -12,16 +16,19 @@
             <div class="dropoff-location">Estimated arrival at {{ tripDetails?.trip?.dropoff_location?.name }}</div>
         </div>
 
-        <hr>
+        <div>
+            <hr>
+        </div>
 
-        <p>
-            Steph Festiculma is a graduate of Parsons New School
-            in New York and fluent in Portugeuse, Spanish and
-            English. Steph has been driving with Alto since 2018.
-        </p>
+        <div class="vibe-container">
+            <div class="vibe">
+                <p>Current Vibe</p>
+                <span>{{ tripDetails?.vibe?.name }}</span>
+            </div>
+        </div>
 
         <div>
-            <button>CONTACT DRIVER</button>
+            <button>CHANGE VEHICLE VIBE</button>
             <hr class="horizontal-row">
         </div>
 
