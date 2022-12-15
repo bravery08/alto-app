@@ -1,0 +1,63 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-card {
+    background-color: rgb(239, 234, 234);
+    color: black;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.alto-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.driver-image {
+    width: 50%;
+}
+
+button {
+    background-color: rgb(239, 234, 234);
+    color: rgb(187, 186, 186);
+    border: solid 2px rgb(187, 186, 186);
+    padding: 1em 2em;
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.footer-text p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    color: rgb(90, 89, 89);
+}
+
+.footer-text .footer-location {
+    font-weight: bold;
+}
+
+.person-icon {
+    width: 15%;
+}
+
+.target-icon {
+    width: 12.5%;
+}
