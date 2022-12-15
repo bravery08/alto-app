@@ -7,6 +7,7 @@
 mat-card {
     background-color: rgb(239, 234, 234);
     color: black;
+    width: 26em;
 }
 
 mat-card-content {
@@ -14,11 +15,11 @@ mat-card-content {
     flex-direction: column;
 }
 
-.alto-logo {
+img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 20%;
 }
 
 .driver-image {
