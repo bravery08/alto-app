@@ -3,11 +3,14 @@
 
         <img class="alto-logo" src="./assets/images/alto_logo.png">
 
-        <img class="driver-image" src="./assets/images/driver-image.png">
+        <img class="route-image" src="./assets/images/Map_overview.png">
     
-        <p>YOUR DRIVER</p>
+        <p class="title">YOUR TRIP</p>
 
-        <h1>Steph</h1>
+        <div class="eta-container">
+            <div class="eta">{{ tripDetails?.trip?.estimated_arrival | date: 'h:mm a' }}</div>
+            <div class="dropoff-location">Estimated arrival at {{ tripDetails?.trip?.dropoff_location?.name }}</div>
+        </div>
 
         <hr>
 
